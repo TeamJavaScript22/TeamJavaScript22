@@ -1,0 +1,43 @@
+<!DOCTYPE html><!--Esta etiqueta le permite al navegador saber que version de html estamos usando-->
+<html lang="en"><!--Declara el idioma predeterminado de la pagina-->
+<head><!--Esta etiqueta permite declarar metadatos, en esta etiqueta se declaran enlaces a script y a hijas de estilo-->
+    <meta charset="UTF-8"><!--Es la codificación del juego de caracteres que se utilizara-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><!--Permite especificar el modo de compatibilidad del navegador-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--Permite tomar el control de la ventana grafica, tanto del ancho como de el zoom inicial-->
+    <title>Hello World</title>
+
+    <!--Enlaces a script-->
+
+    <script src="misScripts.js"></script>
+
+    <!--Enlaces a estilos-->
+
+    <link href="MisEstilos.css" rel="stylesheet">
+
+</head>
+<body><!--contenido del documento-->
+    <div id="encabezado">
+        <h1 class="titulo">Team Javascript</h1>
+        <h5 class="subTitulo">-Javascript, el lenguaje de la web</h5>
+    </div>
+    <div id="cuerpo">
+        <label class="etiqueta">Ejemplo del uso de JavaScript, HTML y CSS</label>
+        <p class="parrafo">
+            En este ejemplo se muestra el uso de JavaScript en la Web<br>
+             y como se relaciona con HTML y CSS.
+        </p>
+        <input type="button" value="Iniciar" id="btnIniciar" class="boton" onclick="PopUp();">
+    </div>
+    <div id="pie">
+        
+        <p class="parrafo">
+            <img src="utn.png" alt="..." class="imagen";">
+            Universidad Tecnológica Nacional - Facultad Regional Córdoba.
+            <br>
+            Departamento en Ingeniería en Sistemas de Información.
+            <br>
+            Laboratorio de Investigación de Software.
+        </p>
+    </div>
+</body>
+</html>

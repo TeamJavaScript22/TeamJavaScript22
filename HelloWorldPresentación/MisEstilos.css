@@ -1,0 +1,171 @@
+/*Esta es la sintaxis que se utiliza en las hojas de estilo css*/
+
+/*Este es el estilo para una etiqueta
+  Tambien se pueden definir estilos
+  como clase que se pueden agregar a 
+  cualquier etiqueta o para un control
+  en particular mediante su id*/
+
+/*Ejemplo*/
+
+/*Etiqueta*/
+
+body{
+
+    /*atributo a modificar*/
+
+    /*Se especifican en la forma {atributo: valor} separados por ';'*/
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+/*clase: se agrega un punto al inicio para indicar que es una clase*/
+
+.boton{
+
+    border-radius: 5px; /*unidad de medida absoluta*/
+    border-color: goldenrod;
+    border-width: 1px;
+    border-style: solid;
+    background-color: whitesmoke;
+    display: block;
+    margin:auto;
+    width: 250px;
+    height: 100px;
+    font-size: 2em;
+}
+
+/*mediante id*/
+
+#encabezado{
+
+    border-radius: 5px;
+    border-color: goldenrod;
+    border-width: 1px;
+    border-style: solid;
+    background-color: whitesmoke;
+    
+    /*Alineación del contenido dentro de un contenedor*/
+
+    margin-top: 3px; /*Es el espacio fuera del borde por arriba arriba entre el contenedor y otros elementos*/
+    margin-bottom: 3px; /*Es el espacion fuera del borde por debajo del contenedor y otros elementos*/
+    padding-top: 3px; /*Es el espacio por dentro del contenedor y el contenido*/
+    padding-bottom: 3px;
+    top:0px;
+    left:0px;
+    display: block; /*Es el modo en que se ordena con los otros elementos*/
+    width: 100%;
+
+}
+
+/*clase*/
+
+.titulo{
+
+    text-align: center;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3em; /*unidad de medida relativa*/
+    font-weight: bold;
+
+}
+
+.subTitulo{
+    
+    text-align: center;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1em;
+    font-weight: lighter;
+
+}
+
+.etiqueta{
+    
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2em;
+    color: black;
+    text-align: center;
+    display: block;
+    padding:25px;
+}
+ .parrafo{
+    
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1em;
+    color: black;
+    text-align: center;
+    display: block;
+    padding:25px;
+    border-color: black;
+    border-width: 5px;
+    border-style: double;
+    
+ }
+
+.bordes{
+
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    
+}
+
+.subTituloPie{
+
+    text-align: justify;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1em;
+    font-weight: lighter;
+    display: block;
+    float: left;
+
+}
+
+.imagen{
+
+    display: inline;
+    height: 53px;
+    width: 53px;
+    border-radius: 5px;
+    border-color: goldenrod;
+    border-width: 1px;
+    border-style: solid;
+    background-color: whitesmoke;
+    float: left;
+
+}
+
+/*id*/
+
+#cuerpo{
+
+    display: block;
+    width: 80%;
+    margin: auto;
+    background-color: white;
+
+}
+
+#pie{
+
+    border-radius: 5px;
+    border-color: goldenrod;
+    border-width: 1px;
+    border-style: solid;
+    background-color: whitesmoke;
+    
+    /*Alineación del contenido dentro de un contenedor*/
+
+    margin-top: 55px; /*Es el espacio fuera del borde por arriba arriba entre el contenedor y otros elementos*/
+    margin-bottom: 3px; /*Es el espacion fuera del borde por debajo del contenedor y otros elementos*/
+    padding-top: 3px; /*Es el espacio por dentro del contenedor y el contenido*/
+    padding-bottom: 3px;
+    top:0px;
+    left:0px;
+    display: block; /*Es el modo en que se ordena con los otros elementos*/
+    width: 100%;
+    height: max-content;
+}
+
