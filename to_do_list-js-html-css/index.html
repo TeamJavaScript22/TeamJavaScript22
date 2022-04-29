@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>Todo List</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <!--Enlaces a la hoja de estilo y al archivo JavaScript-->
+        <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+        <script src='main.js'></script>
+    </head>
+    <body style="background-color: white;">
+        <div class="container">
+            <div id="header">
+               To Do List
+            </div>
+            <div id="content">
+                <div>
+                    <div>
+                        <span>Task Name:</span>
+                        <input type="text" id="inputTask" class="control"> 
+                        <input type="button" id="btnAddTask" value="+" class="control button" onclick="addTask();">
+                    </div>
+                </div>
+                <div id="list">
+                    
+                </div>
+            </div>
+            <div id="footer">
+                <div> 
+                    <span>Team JavaScript</span>
+                </div>
+                <div>
+                    <span>JavaScript. El lenguaje de la web</span>
+                </div>
+            </div>
+        </div>
+    </body>
+    </html>
