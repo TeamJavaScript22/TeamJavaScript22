@@ -1,0 +1,61 @@
+/*css principal*/
+
+/*Flex grid*/
+
+.flexContainer {
+    background-color: gainsboro;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+/* Permite hacer que las columnas sean responsive y convierte tres columnas en una */
+@media (max-width: 800px) {
+    .flexItemTask {
+        flex: 100% !important;
+    }
+}
+
+.nav-bar {
+    width: 100%;
+    height: 60px;
+}
+
+.header-container {
+    display: flex;
+    height: 32px;
+    justify-content: center;
+}
+
+.flexItemTask {
+    flex: 30%;
+    height: 80px;
+    border: 1px solid;
+    text-align: center;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+.task-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*css auxiliar*/
+
+.auxiliaryBorder {
+    width: 100%;
+    border-radius: 3px;
+    border-color: blue;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.container {
+    width: 100%;
+    background-color: whitesmoke;
+    display: flex;
+    grid-template-columns: auto auto;
+}
