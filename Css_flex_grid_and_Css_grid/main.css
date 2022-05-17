@@ -1,0 +1,97 @@
+/*css principal*/
+
+/*Flex grid*/
+
+.flexContainer{
+    background-color: gainsboro;
+    /*El elemento se comporta como
+    un elemento de bloque y
+    establece su contenido de
+    acuerdo con el modelo de
+    flexbox.*/
+    display: flex;
+    /*Especifica si los elementos 
+    "hijos" son obligados a 
+    permanecer en una misma línea 
+    o pueden fluir en varias líneas.*/
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.flexItemLeft {
+    background-color: antiquewhite;
+    padding: 10px;
+    /*la capacidad de un elemento 
+    flexible para alterar sus dimensiones 
+    y llenar el espacio disponible. */
+    flex: 25%;
+}
+
+.flexItemCenter {
+    background-color: beige;
+    padding: 10px;
+    flex: 25%;
+}
+
+.flexItemRight {
+    background-color: bisque;
+    padding: 10px;
+    flex: 25%;
+  }
+
+/* Permite hacer que las columnas sean responsive y convierte tres columnas en una */
+@media (max-width: 800px) {
+    .flexItemRight, .flexItemCenter, .flexItemLeft {
+     flex: 100%;
+    }
+    .flexItemRight{
+        background-color: aqua;
+    }
+}
+
+/*grid*/
+
+.gridContainer{
+    background-color: whitesmoke;
+    /*El elemento se comporta
+    como un elemento de
+    bloque y establece su
+    contenido de acuerdo con
+    el modelo de cuadrícula.*/
+    display: grid;
+    /* define el nombre de las
+    líneas y las funciones de
+    tamaño de línea de grid
+    columns.*/
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+}
+
+.gridItem { 
+    background-color: aliceblue;
+    border: 1px solid blue;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
+
+/*css auxiliar*/
+
+.auxiliaryBorder{
+    border-radius: 3px;
+    border-color: blue;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.container{
+    background-color: whitesmoke;
+    display: grid;
+    grid-template-columns: auto auto;
+    
+}
+
+h1{
+    color: blue;
+    text-align: center;
+}
