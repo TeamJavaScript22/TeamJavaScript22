@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>Todo List</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <!--Enlaces a la hoja de estilo y al archivo JavaScript-->
+        <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+        <script src='main.js'></script>
+    </head>
+    <body style="background-color: white;" onload="onLoadTodoList();">
+        <div class="container">
+            <div id="header">
+               To Do List
+            </div>
+            <div id="content">
+                <div>
+                    <div>
+                        <span>Task Name:</span>
+                        <input type="text" id="inputTask" class="InputTaskName">
+                        <input type="button" id="btnAddTask" value="+" class="control button" onclick="onClickAdd();">
+                        <select id="selPriority" name="priority" class="priorityControl">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </div>
+                    <div>
+                        Time elapsed<input type="text" id="time" class="InputElapsedTime">
+                    </div>
+                    <div>
+                        Filter<input type="text" id="inputTaskFilter" class="InputTaskFilter" onchange="onChangeText();">
+                    </div>
+                    <div>
+                        <input type="button" id="btnAscendingOrder" value="Ascending order" class="control" onclick="onClickAscendingOrder();">
+                        <input type="button" id="btnDescendingOrder" value="Descending order" class="control" onclick="onClickDescendingOrder();">
+                    </div>
+                </div>
+                <div id="list">
+                    
+                </div>
+            </div>
+            <div id="footer">
+                <div> 
+                    <span>Team JavaScript</span>
+                </div>
+                <div>
+                    <span>JavaScript. El lenguaje de la web</span>
+                </div>
+            </div>
+        </div>
+    </body>
+    </html>
